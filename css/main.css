@@ -9,6 +9,7 @@
 body {
     background-color: #edf2f4;
     color: #2b2d42;
+    overflow: hidden;
 }
 
 h1 {
@@ -16,7 +17,6 @@ h1 {
     text-align: center;
     justify-content: center;
     gap: 1rem;
-    position: relative;
 }
 
 h2 {
@@ -30,6 +30,30 @@ h3 {
 img {
     margin-right: 1rem;
     padding-top: 0.5rem;
+}
+
+.smiley {
+    position: absolute;
+    left: -45vw;
+}
+
+.animate {
+    animation-name: roll;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes roll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(55vw) rotate(360deg);
+    }
 }
 
 p {
@@ -100,7 +124,7 @@ form {
 
 input:focus {
     transform: scale(1.05);
-    border: 2px solid #grey;
+    border: 2px solid grey;
 }
 
 .mad-lib {
