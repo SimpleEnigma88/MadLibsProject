@@ -19,7 +19,7 @@ const story = `My friends and I started a secret club! We meet every day by the 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    if (adj1.value == "") {
+    /* if (adj1.value == "") {
         alert(`${adj1.name} must be filled out!`);
         adj1.focus();
     } else if (noun1.value == "") {
@@ -40,7 +40,9 @@ form.addEventListener("submit", function (event) {
     } else if (food.value == "") {
         alert(`${food.name} must be filled out!`);
         food.focus();
-    } else madLibStoryDisplay();
+    } else */
+
+    madLibStoryDisplay();
 });
 
 function madLibStoryDisplay() {
